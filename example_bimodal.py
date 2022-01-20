@@ -45,7 +45,7 @@ train_system(h, 3000, bimodal_pdf, identity,
 
 # Plot a histogram of the generator outputs
 h.plot1Dhist(num_samples = 100000, num_bins = 50,
-             targetLL = bimodal_cdf, gamma = gamma)
+             targetLL = bimodal_pdf, gamma = gamma)
 plt.show()
 
 # Perform a one sample Kolmogorov-Smirnov test
